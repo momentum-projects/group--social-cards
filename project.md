@@ -93,3 +93,7 @@ A suggested list of endpoints and what they should do are listed below:
 | GET    | /friends/         | -          | list of all your "friends"          |                                                    |
 | POST   | /friends/         | user by id | user info                           | add user as a friend                               |
 | DELETE | /friends/:user_id | -          | -                                   | removes user with specified id from your friends   |
+
+### CORS
+
+CORS (Cross-Origin Resource Sharing) headers must be added to your responses for the front-end app to interact with your API. [Read this blog post to find out how to set up CORS](https://www.techiediaries.com/django-cors/). You will want to use django-cors-headers (the second option mentioned in the blog post) and set `CORS_ORIGIN_ALLOW_ALL = True`.
