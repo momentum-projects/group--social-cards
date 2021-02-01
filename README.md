@@ -38,6 +38,8 @@ During development of the front-end, you will want to be able to make requests b
 
 One way is to make functions or methods for all your API calls, but instead of having them actually make the calls at first, have them set the data you are expecting with actually making an API call. Another way is to use the provided exported mock API specification for [Mockoon](https://mockoon.com/), a tool that will run a mock server for you. In this case, you will want to be able to switch which server you use based on the environment your code is running in. [An API specification you can import into Mockoon is provided](social-cards-mockoon.json).
 
+You can [read more about approaches to building your front-end before the API is done in this dev.to article](https://dev.to/momentum/how-to-build-a-front-end-app-before-you-have-an-api-3ai3).
+
 **If you need to switch how you access your data based on environment**, [read this article on create-react-app-environments](https://medium.com/@tacomanator/environments-with-create-react-app-7b645312c09d).
 
 You _can_ work with your partner to get the back-end API running on your local machine, but you do not have to.
@@ -46,9 +48,9 @@ You _can_ work with your partner to get the back-end API running on your local m
 
 You can design your front-end to have whatever components you think are necessary. A suggested layout is below. A few notes: `Route` is from react-router, nesting shows what children each component might have, and several components are re-used under different routes. This is a non-exhaustive list and created from sketching on paper.
 
-- App 
-  - Header 
-    - LoginControl 
+- App
+  - Header
+    - LoginControl
     - Menubar
   - Route /
     - CardList
