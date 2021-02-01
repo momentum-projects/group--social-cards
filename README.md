@@ -32,7 +32,7 @@ Use your creativity and come up with your own options. This will be good practic
 
 ## Process
 
-Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Heroku](https://heroku.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/). **Both team members should accept this assignment and then create either a Django project or a create-react-app project in this repository, at the top level with no intermediate subdirectories.**
+Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Heroku](https://heroku.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/). **The back-end should be built in a subdirectory called `backend` and the front-end in a subdirectory called `frontend`.
 
 During development of the front-end, you will want to be able to make requests before the API is complete. You can handle this in a few ways.
 
