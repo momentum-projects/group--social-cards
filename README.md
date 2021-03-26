@@ -4,35 +4,56 @@
 
 Imagine a social network, like Twitter or Facebook. Imagine electronic greeting cards. Now imagine them together -- that's what you are building as a group in this project.
 
-## Description
+## Description & Overview
 
-In this project, users sign up for your site and follow each other. Note there is a big difference between the two major social platforms: on Twitter, relationships are one-way. If I follow you, you don't automatically follow me. On Facebook, relationships are two-way. You can choose which paradigm to use for this project, but if you make relationships two-way, they should be approved by the user to whom the relationship is being proposed (a "friend request," in Facebook terms.) _One-way relationships are easier and suggested._
+The social e-cards application lets users sign up, create greeting cards, and follow each other. A user can see cards shown from newest to oldest: they can see a collection of their own cards, a collection of cards by users they follow, and a colletion of all cards.
 
-Once a user is a member of your site, they can create "cards." (You may call these something else, and probably should.) A card is made up of a message, but can be made up of so much more. As a group, you should decide on the options, but there should be at least three. Some examples are:
+### Following
 
-- the card color (from a predefined list, probably)
+Note there is a big difference between the two major social platforms: on Twitter, relationships are one-way. If I follow you, you don't automatically follow me. On Facebook, relationships are two-way. You can choose which paradigm to use for this project, but if you make relationships two-way, they should be approved by the user to whom the relationship is being proposed (a "friend request," in Facebook terms.) _One-way relationships are easier and suggested._
+
+### Cards and Customizable Options
+
+Once a user is a member of your site, they can create "cards." You may choose to call these something else -- creative interpretation is always welcome! Think of a card as a visual message with customizable text, styling and images. As a group, you should decide on the customizable options, but there should be at least three. Some examples of customizable options you can offer users are:
+
+- the card color (from a predefined list)
 - the border style ([here is an article on making cool borders with CSS](https://amethystwebsitedesign.com/decorative-borders-with-only-css-and-no-images/))
 - the font (from a predefined list; choose a set of fonts to bring in from [Google Fonts](https://fonts.google.com/))
 - the text alignment
-- an image to include (Note: uploading images to an API will be a pain. There are alternatives -- you could use the [Unsplash API](https://unsplash.com/developers) on the front-end and store the image location on the back-end.)
+- an image to include (Note: uploading images to an API will require significantly more work. An recommended alternative is to use the [Unsplash API](https://unsplash.com/developers) on the front-end and store the image location (url) on the back-end.)
 - an outer message and inner message -- the inner message would be shown with some sort of transition on click, like the front and interior of a greeting card
 
-Users should be able to see three screens of cards in reverse chronological order: a screen of cards from users they follow, a screen of their own cards, and a screen of cards from all users. These should show a reasonable number of cards and allow the user to click to see more. If you would prefer to implement [an infinite scroll](https://www.smashingmagazine.com/2013/05/infinite-scrolling-lets-get-to-the-bottom-of-this/), go for it! The point is that the API should [paginate results](https://www.django-rest-framework.org/api-guide/pagination/).
+### "Pages"
 
-As for how all of this should look, that is up to you! We are not providing wireframes, but your group should sit down and make decisions about what pages will be needed and what they will look like first.
+Users should be able to see three screens of cards:
+- a screen of cards from users they follow 
+- a screen of their own cards
+- and a screen of cards from all users 
 
-Also, the above is a minimum set of features. There are lots of features you might want to add, like:
+Each collection should show a reasonable number of cards, sorted with the newest first, and allow the user to click to see more. 
+
+If you would prefer to implement [an infinite scroll](https://www.smashingmagazine.com/2013/05/infinite-scrolling-lets-get-to-the-bottom-of-this/), go for it! The point is that the API should [paginate results](https://www.django-rest-framework.org/api-guide/pagination/).
+
+### Design
+
+As for how all of this should look, that is up to you! We are not providing wireframes, but your group should sit down and make decisions about what pages will be needed and what they will look like before you start writing code.
+
+## 🌶️ Features
+
+The above is a minimum set of features. You might want to add other features, and you should go for it if you have time. Some ideas:
 
 - liking or favoriting cards
 - comments or responses to cards
 - directly sending cards to users
 - draft cards (cards not yet shown that are still being created)
 
-Use your creativity and come up with your own options. This will be good practice for your Phase 4 project.
+Be creative and make this project your own.
 
 ## Process
 
-Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Heroku](https://heroku.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/). **The back-end should be built in a subdirectory called `backend` and the front-end in a subdirectory called `frontend`.
+Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Heroku](https://heroku.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/).
+
+### Front-end development notes
 
 During development of the front-end, you will want to be able to make requests before the API is complete. You can handle this in a few ways.
 
@@ -40,7 +61,7 @@ One way is to make functions or methods for all your API calls, but instead of h
 
 You can [read more about approaches to building your front-end before the API is done in this dev.to article](https://dev.to/momentum/how-to-build-a-front-end-app-before-you-have-an-api-3ai3).
 
-**If you need to switch how you access your data based on environment**, [read this article on create-react-app-environments](https://medium.com/@tacomanator/environments-with-create-react-app-7b645312c09d).
+**If you need to switch how you access your data based on environment**, [read this article on create-react-app-environments](https://medium.com/@tacomanator/environments-with-create-react-app-7b645312c09d). 
 
 You _can_ work with your partner to get the back-end API running on your local machine, but you do not have to.
 
@@ -76,7 +97,7 @@ You can design your front-end to have whatever components you think are necessar
       - CardForm
       - CardPreview
 
-### Authentication
+### Authenticating from the front-end
 
 Your back-end partner will show you how authentication works with Django REST Framework. What you will need to do is get an authentication token from the back-end (usually via POST to a URL like `/api/auth/token/login/`) and [store that token in localStorage](https://programmingwithmosh.com/react/localstorage-react/) for use on later requests.
 
