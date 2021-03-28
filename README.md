@@ -57,7 +57,7 @@ Your application is really two applications -- a back-end API written with Djang
 
 During development of the front-end, you will want to be able to make requests before the API is complete. You can handle this in a few ways.
 
-One way is to make functions or methods for all your API calls, but instead of having them actually make the calls at first, have them set the data you are expecting with actually making an API call. Another way is to use the provided exported mock API specification for [Mockoon](https://mockoon.com/), a tool that will run a mock server for you. In this case, you will want to be able to switch which server you use based on the environment your code is running in. [An API specification you can import into Mockoon is provided](social-cards-mockoon.json).
+One way is to make functions or methods for all your API calls, but instead of having them actually make the calls at first, have them set the data you are expecting without actually making an API call. Another way is to use the provided exported mock API specification for [Mockoon](https://mockoon.com/), a tool that will run a mock server for you. In this case, you will want to be able to switch which server you use based on the environment your code is running in. [An API specification you can import into Mockoon is provided](social-cards-mockoon.json).
 
 You can [read more about approaches to building your front-end before the API is done in this dev.to article](https://dev.to/momentum/how-to-build-a-front-end-app-before-you-have-an-api-3ai3).
 
