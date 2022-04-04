@@ -122,4 +122,4 @@ A suggested list of endpoints and what they should do are listed below:
 
 ### CORS
 
-CORS (Cross-Origin Resource Sharing) headers must be added to your responses for the front-end app to interact with your API. [Read this blog post to find out how to set up CORS](https://www.techiediaries.com/django-cors/). You will want to use django-cors-headers (the second option mentioned in the blog post) and set `CORS_ORIGIN_ALLOW_ALL = True`.
+CORS (Cross-Origin Resource Sharing) headers must be added to your responses for the front-end app to be able to interact with your API. [Read this blog post for more on how to set up CORS](https://www.stackhawk.com/blog/django-cors-guide). You will want to use [`django-cors-headers`](https://github.com/adamchainz/django-cors-headers) and set `CORS_ALLOW_ALL_ORIGINS = True`.
