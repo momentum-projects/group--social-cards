@@ -1,10 +1,10 @@
-# Create a social greeting card service
+# Social E-Cards
 
 **IMPORTANT**: Please read this document closely. Many resources are linked within it. Before starting on your project, assemble a list of the tasks you think you need to do and discuss how you will tackle these together. The front-end will need to make some basic [wireframes](https://www.orbitmedia.com/blog/7-reasons-to-wireframe/#:~:text=for%20your%20website.-,Wireframes%20are%20simple%20black%20and%20white%20layouts%20that%20outline%20the,focusing%20on%20a%20site's%20structure).
 
-Imagine a social network, like Twitter or Facebook. Imagine electronic greeting cards. Now imagine them together -- that's what you are building as a group in this project.
-
 ## Description & Overview
+
+Imagine a social network, like Twitter or Facebook. Imagine electronic greeting cards. Now imagine them together -- that's what you are building as a group in this project.
 
 The social e-cards application lets users sign up, create greeting cards, and follow each other. A user can see cards shown from newest to oldest: they can see a collection of their own cards, a collection of cards by users they follow, and a colletion of all cards.
 
