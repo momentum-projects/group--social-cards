@@ -51,7 +51,7 @@ Be creative and make this project your own.
 
 ## Process
 
-Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Heroku](https://heroku.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/).
+Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Render](https://render.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/).
 
 ### Front-end development notes
 
