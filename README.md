@@ -57,13 +57,13 @@ Your application is really two applications -- a back-end API written with Djang
 
 During development of the front-end, you will want to be able to make requests before the API is complete. You can handle this in a few ways.
 
-One way is to make functions or methods for all your API calls, but instead of having them actually make the calls at first, have them set the data you are expecting without actually making an API call. Another way is to use the provided exported mock API specification for [Mockoon](https://mockoon.com/), a tool that will run a mock server for you. In this case, you will want to be able to switch which server you use based on the environment your code is running in. [An API specification you can import into Mockoon is provided](social-cards-mockoon.json).
+One way is to make functions or methods for all your API calls, but instead of having them actually make the calls at first, have them set the data you are expecting without actually making an API call. Another way is to use the provided exported mock API specification for [Mockoon](https://mockoon.com/), a tool that will run a mock server for you. You will need to [download Mockoon](https://mockoon.com/download/) and open [the file provided in this repo](social-cards-mockoon.json) (in Mockoon, select "Open environment" from the File menu). Here is documentation on [getting started with Mockoon](https://mockoon.com/tutorials/getting-started/). Here is [documentation on making API calls from your React app to Mockoon](https://mockoon.com/tutorials/react-api-call-and-mocking/).
+
+If you use Mockoon, you may want to be able to switch which server you use based on the environment your code is running in. To learn about how to access your data based on environment, [read this article on create-react-app-environments](https://medium.com/@tacomanator/environments-with-create-react-app-7b645312c09d). 
 
 You can [read more about approaches to building your front-end before the API is done in this dev.to article](https://dev.to/momentum/how-to-build-a-front-end-app-before-you-have-an-api-3ai3).
 
-**If you need to switch how you access your data based on environment**, [read this article on create-react-app-environments](https://medium.com/@tacomanator/environments-with-create-react-app-7b645312c09d). 
-
-You _can_ work with your partner to get the back-end API running on your local machine, but you do not have to.
+You _can_ work with your backend dev(s) to get the back-end API running on your local machine, but you do not have to.
 
 ## Front-end spec suggestions
 
@@ -99,7 +99,7 @@ You can design your front-end to have whatever components you think are necessar
 
 ### Authenticating from the front-end
 
-Your back-end partner will show you how authentication works with Django REST Framework. What you will need to do is get an authentication token from the back-end (usually via POST to a URL like `/api/auth/token/login/`) and [store that token in localStorage](https://programmingwithmosh.com/react/localstorage-react/) for use on later requests.
+Your back-end dev(s) will show you how authentication works with Django REST Framework. What you will need to do is get an authentication token from the back-end (usually via POST to a URL like `/api/auth/token/login/`) and [store that token in localStorage](https://programmingwithmosh.com/react/localstorage-react/) for use on later requests.
 
 ## Back-end spec suggestions
 
