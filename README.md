@@ -42,10 +42,13 @@ As for how all of this should look, that is up to you! We are not providing wire
 
 The above is a minimum set of features. You might want to add other features, and you should go for it if you have time. Some ideas:
 
-- liking or favoriting cards
-- comments or responses to cards
-- directly sending cards to users
-- draft cards (cards not yet shown that are still being created)
+- Liking or favoriting cards
+- Comments or responses to cards
+- Directly sending cards to users
+- Draft cards (cards not yet shown that are still being created)
+- Allow comments on cards only from followers
+- Make following two-way (so that it's "friends" instead of followers) and implement friend requests
+- Allow users to block followers
 
 Be creative and make this project your own.
 
