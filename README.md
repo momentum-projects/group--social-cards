@@ -93,6 +93,8 @@ Your back-end dev(s) will show you how authentication works with Django REST Fra
 
 As for how all of this should look, that is up to you! We are not providing wireframes, but your group should sit down and make decisions about what pages will be needed and what they will look like before you start writing code.
 
+⚠️ Make sure your UI has sensible options for your user. For example: A user who is not the creator of a card should not see buttons or links to edit a card. If a user is logged in, they should no longer see options to log in, but they should see an option to log out. The flow through your application should make sense according to what a user would reasonably expect.
+
 ### Waiting for the API to be working
 
 During development of the front-end, you will want to be able to make requests before the API is complete. You can handle this in a few ways.
