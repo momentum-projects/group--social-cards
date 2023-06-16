@@ -1,12 +1,12 @@
-# Social E-Cards
+# Social Cards
 
 **IMPORTANT**: Please read this document closely. Many resources are linked within it. Before starting on your project, assemble a list of the tasks you think you need to do and discuss how you will tackle these together. The front-end will need to make some basic [wireframes](https://www.orbitmedia.com/blog/7-reasons-to-wireframe/#:~:text=for%20your%20website.-,Wireframes%20are%20simple%20black%20and%20white%20layouts%20that%20outline%20the,focusing%20on%20a%20site's%20structure).
 
 ## Description & Overview
 
-Imagine a social network, like Twitter or Facebook. Imagine electronic greeting cards. Now imagine them together -- that's what you are building as a group in this project.
+Imagine a social network, like Twitter or Instagram. Imagine electronic greeting cards. Now imagine them together -- that's what you are building as a group in this project.
 
-The social e-cards application lets users sign up, create greeting cards, and follow each other. A user can see cards shown from newest to oldest: they can see a collection of their own cards, a collection of cards by users they follow, and a collection of all cards.
+The social cards application lets users sign up, create greeting cards, and follow each other. A user can see cards shown from newest to oldest: they can see a collection of their own cards, a collection of cards by users they follow, and a collection of all cards.
 
 Your application is really two applications -- a back-end API written with Django REST Framework and a front-end React application. The back-end API should be deployed on [Render](https://render.com/) and the front-end app should be deployed on [Netlify](https://www.netlify.com/).
 
@@ -18,8 +18,8 @@ Once a user is a member of your site, they can create "cards." You may choose to
 - the border style ([here is an article on making cool borders with CSS](https://amethystwebsitedesign.com/decorative-borders-with-only-css-and-no-images/))
 - the font (from a predefined list; choose a set of fonts to bring in from [Google Fonts](https://fonts.google.com/))
 - the text alignment
-- an image to include (Note: uploading images to an API will require significantly more work. An recommended alternative is to use the [Unsplash API](https://unsplash.com/developers) on the front-end and store the image location (url) on the back-end.)
-- an outer message and inner message -- the inner message would be shown with some sort of transition on click, like the front and interior of a greeting card
+- an image to include (Note: uploading images to an API will require significantly more work. An alternative is to use the [Unsplash API](https://unsplash.com/developers) on the front-end and store the image location (url) on the back-end.)
+- an outer message and inner message. The inner message would be shown with some sort of transition on click, like the front and interior of a greeting card.
 
 Discuss as a team how you will implement this and make a plan that makes sense to everyone.
 
@@ -55,7 +55,7 @@ If you would prefer to implement [an infinite scroll](https://www.smashingmagazi
 
 You can design your front-end to have whatever components you think are necessary. A suggested layout is below. A few notes: `Route` is from react-router, nesting shows what children each component might have, and several components are re-used under different routes. This is a non-exhaustive list and created from sketching on paper.
 
-```
+```text
 - App
   - Header
     - LoginControl
@@ -79,7 +79,7 @@ You can design your front-end to have whatever components you think are necessar
     - CardList
       - Card
         - LikeButton
-  - Route /create-card
+  - Route /new-card
     - CardEditor
       - CardForm
       - CardPreview
@@ -111,7 +111,7 @@ You _can_ work with your backend dev(s) to get the back-end API running on your 
 
 ### Minimum Requirements
 
-⚠️ Be sure to test that you have implemented permissions-checking correctly for these endpoints. For example, your API should not allow a user who is not the creator of a card to update a card.
+⚠️ Be sure to test that you have implemented permissions-checking correctly for these endpoints. For example, your API should not allow a user who is not the creator of a card to update that card.
 
 - token login, logout, and register (i.e., create a new user)
 - list all cards
@@ -131,7 +131,7 @@ You _can_ work with your backend dev(s) to get the back-end API running on your 
 Note that following is a relationship between users. Different social media platforms implement this concept differently.
 
 On Twitter, for example, relationships are one-way. If I follow you, you don't automatically follow me. On Facebook, relationships are two-way. You can choose which paradigm to use for this project, but if you make relationships two-way, they should be approved by the user to whom the relationship is being proposed (a "friend request," in Facebook terms.) _One-way relationships are easier and suggested._
-[Here's blog post that reviews options for modeling relationships between users](https://charlesleifer.com/blog/self-referencing-many-many-through/) -- read it to understand the problem you are solving and then implement it in a way that makes sense to you.
+[Here's blog post that reviews options for modeling relationships between users](https://charlesleifer.com/blog/self-referencing-many-many-through/); read it to understand the problem you are solving and then implement it in a way that makes sense to you.
 
 ### Back-end spec suggestions
 
